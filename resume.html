@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>陈景飘的简历</title>
+        <link rel="stylesheet" href="css/resume.css">
+        <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700|Source+Sans+Pro:400,400i" rel="stylesheet">
+    <body>
+        <div class="page">
+            <div class="section row">
+                <h1 class="col">陈景飘 / Chen Jingpiao</h1>
+                <div class="contact-info col-right">
+                    <div>(+86) 182 1124 5085</div>
+                    <div><a href="mailto:chenjingpiao@gmail.com">chenjingpiao@gmail.com</a></div>
+                    <div><a href="https://ppiao.github.io">ppiao.github.io</a></div>
+                    <div>GitHub: <a href="https://www.github.com/ppiao">ppiao</a></div>
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">自我介绍</h2>
+                <div class="section-text col-right row">
+		<li>熟悉C和Linux系统调用</li>
+		<li>开源爱好者，熟悉开源工作流，其中为strace贡献超过<a href="https://github.com/strace/strace/commits?author=ppiao">200个补丁</a>，两届GSoCer</li>
+		<li>熟悉各种工具：VIM、Git、GCC、GDB、find、grep、diff、makefile等等</li>
+		<!-- <li>熟悉表、栈、队列、树、排序等基础的算法</li> -->
+		<!-- <li>了解操作系统、文件系统和计算机网络</li> -->
+		<li>有较强的代码阅读能力，读过Linux的netlink socket、ptrace、seccomp等模块代码</li>
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">教育经历</h2>
+                <div class="section-text col-right">
+                    <h3>广东药科大学</h3>
+                    <div class="row subsection">
+                        <div class="desc">计算机科学与技术，本科</div>
+                    </div>
+                    <div class="row">
+                        <div class="col light">Guangzhou, China</div>
+                        <div class="col-right light">2015.09 - 2019.06</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">工作经历</h2>
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>腾讯 - 技术工程事业群</h3>
+                        </div>
+                    </div>
+                    <div class="row subsection">
+                        <div class="desc">后台开发，实习</div>
+                        <div class="col-right light">2018.06 - 2018.07</div>
+                    </div>
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">项目</h2>
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>strace GSoC 2018: seccomp-assisted syscall filtering</h3>
+                        </div>
+                    </div>
+                    <ul class="desc">
+
+			    strace是一个跟踪系统调用的工具。使用seccomp的SECCOMP_RET_TRACE API可以更加高效地筛选系统调用。使用这个技术，被跟踪进程挂起在被选中的系统调用入口处，而不是所有系统调用
+			    <li>在strace中使用seccomp的SECCOMP_RET_TRACE API实现系统调用的筛选</li>
+			    <li>构造支持multi-architecture和multi-personality的BPF指令</li>
+			    <li>运行时检测seccomp的行为</li>
+                </div>
+                <div class="section-text col-right">
+                    <div class="row">
+                        <div class="col">
+                            <h3>strace GSoC 2017: netlink socket parsers</h3>
+                        </div>
+                    </div>
+                    <ul class="desc">
+			    strace是Linux跟踪系统调用的工具，netlink socket在Linux下用于进程通信，通常用于用户空间和内核的通信。用于iptables，iproute2，nftables等软件。先是实现netlink socket parser基本的模块，然后根据TLV解释netlink的内容。主要任务是合并GSoC 2016的代码，扩展更多netlink协议，完成了以下任务：
+			    <li>修改并合并的GSoC 2016的代码</li>
+			    <li>完成了NETLINK_SOCK_DIAG, NETLINK_ROUTE, NETLINK_SELINUX, NETLINK_CRYPTO, NETLINK_KOBJECT_UEVENT等协议的解释器</li>
+			    <li>完成了所有相关的测试</li>
+                </div>
+            </div>
+            
+            <div class="section row">
+                <h2 class="col">荣誉</h2>
+                <div class="section-text col-right row">
+			<li><a href="https://summerofcode.withgoogle.com/archive/2017/projects/6190091550588928">Google Summer of Code 2017</a></li>
+			<li><a href="https://summerofcode.withgoogle.com/projects/#5194902636331008">Google Summer of Code 2018</a></li>
+                    <ul class="desc">
+			    GSoC 是由 Google、开源组织、学生共同组成和参与的大型编程活动。学生花三个月专心为开源项目贡献代码。Google 负责提供3600美金左右的津贴，以及管理整个活动的人员挑选与津贴发放等事宜。
+
+			<li>2016蓝桥杯省三等奖，2017蓝桥杯省二等奖</li>
+                </div>
+            </div>
+            <div class="section row">
+                <h2 class="col">自我评价</h2>
+                <div class="section-text col-right row">
+			<li>有较强的自主学习能力，熟练使用Google，阅读英文文档，使用邮件列表</li>
+			<li>有参与大型项目经验，注意代码规范、测试，有较强的代码阅读能力</li>
+			<li>热爱编程，追求极致，敢于接受挑战</li>
+		</div>
+	    </div>
+        </div>
+    </body>
+</html>
